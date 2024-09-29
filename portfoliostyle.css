@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in element's total width/height */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Applies font globally */
+    border: none;
+}
+
+/* Body Styling */
+body {
+    background-image: radial-gradient(rgb(41, 41, 145), rgb(30, 29, 29)); /* Smooth radial gradient */
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures background covers the entire page */
+    min-height: 100vh; /* Ensures body covers full viewport height */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}/*
+
+/* Header Section */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    padding: 0 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo Styling */
+#img1 {
+    height: 80px; /* Adjust height for the logo */
+    margin-right: auto; /* Pushes nav to the right */
+}
+
+/* Navigation Menu */
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Unordered List Styling */
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    padding: 0;
+    margin-right: 50px;
+}
+
+/* Navigation Links */
+ul li {
+    margin: 0 20px; /* Spacing between menu items */
+    font-size: 17px;
+}
+
+ul li a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: tomato;
+    transition: color 0.5s ease-in-out;
+}
+
+/* Marquee Styling */
+marquee {
+    font-size: 12px;
+    font-weight: bold;
+    background-color: rgb(255, 38, 0);
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    #img1 {
+        height: 60px;
+    }
+    
+    ul {
+        margin-right: 20px;
+    }
+    
+    ul li {
+        margin: 0 10px;
+    }
+    
+    marquee {
+        font-size: 10px;
+    }
+}
+
+/* Content (Heading) Styling */
+#content {
+    position: absolute;
+    top: 50px;
+    left: 70px; /* Instead of margin-left for better control */
+    color: rgb(241, 238, 238); 
+    font-size: 60px; 
+    font-family: Cambria, Cochin, Georgia, serif; 
+    font-weight: bold;
+    padding: 50px;
+    cursor: default;
+}
+
+span {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-size: 45px;
+    position: absolute;
+    top: 160px; /* Adjusted from margin-top */
+    left: 120px; /* Adjusted from margin-left */
+    color: tomato;
+    cursor: default;
+}
+
+#para {
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    width: 500px;
+    position: absolute;
+    top: 250px; /* Adjusted for consistent layout */
+    left: 120px; /* Adjusted from margin-left */
+    cursor: default;
+}
+/* 
+#btn {
+    margin-top: 100px;
+    padding: 10px;
+    width: 160px;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: rgb(255, 179, 80);
+    box-shadow: 0px 0px 20px black;
+    position: absolute;
+    top: 300px; /* Adjust for placement */
+  /*  left: 250px;
+}
+
+#btn:hover {
+    background-color: tomato;
+    transition: 1s ease-in-out;
+    height: 50px;
+    width: 170px;
+} */
+#btn {
+    margin-top: 400px;
+    padding: 15px 30px;  /* Increased padding for better size */
+    width: 180px;        /* Increased width slightly */
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: rgb(255, 179, 80);
+    box-shadow: 0px 0px 20px black;
+    display: inline-block; /* Inline for better alignment */
+    text-align: center;
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover */
+    margin-left:250px;
+}
+
+#btn:hover {
+    background-color: tomato;
+    transform: scale(1.1); /* Slightly enlarges the button on hover */
+}
+
+#downloadLink {
+    text-decoration: none;
+    color: black;  /* Button text should match the button's text color */
+}
+
+
+#homecontainer {
+    position: relative;
+    margin-top: 100px;
+    height: 500px; /* Adjusted to allow room for content */
+    padding: 20px;
+}
+
+/* Image Styling */
+#img2{
+    position: absolute;
+    right: 100px;
+    margin-top: 20px; 
+    box-shadow:0px 0px 10px black;
+    border-radius: 110px;
+}
+#img2:hover{
+    box-shadow:0px 0px 10px rgb(22, 228, 53);
+    border-radius: 130px;
+    transition: 1s ease-in-out;
+    border-radius: 130px;
+} 
+
+/* Contact Form */
+
+.contact-form {
+    max-width: 500px;
+    margin: 140px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #3e8e41;
+}
+
+/* Footer Section Styling */
+#footer {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 40px 20px; /* Padding for spacing */
+    text-align: center;
+}
+
+#imgFooter {
+    width: 150px; /* Increased width */
+    height: auto;
+}
+
+#textFooter {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#textFooter a {
+    color: #f39c12; /* Link color (orange) */
+    text-decoration: none; /* No underline for links */
+}
+
+#textFooter a:hover {
+    text-decoration: underline; /* Underline link on hover */
+}
+
+
+#contactBtn {
+    background-color: #f39c12; /* Button background (orange) */
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+#contactBtn:hover {
+    background-color: #d35400; /* Darker orange on hover */
+}
+/* #contactBtn a{
+    color:white;
+    text-decoration: none;
+} */
+
+#SocialMediaIcon {
+    margin-top: 30px;
+}
+
+#titleSocial {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase; /* Capitalize text */
+}
+
+
+.icon {
+    display: inline-block; /* Display icons inline */
+    margin: 10px; /* Space around each icon */
+    text-align: center; /* Center align icon and text */
+}
+
+.icon img {
+    width: 40px; /* Set width of social media icons */
+    height: auto; /* Keep aspect ratio */
+    transition: transform 0.3s; /* Transition for scaling */
+}
+
+.icon:hover img {
+    transform: scale(1.1); /* Scale icon on hover */
+}
+
+.icon p {
+    margin-top: 5px; /* Space above text */
+    font-size: 14px; /* Font size for the social media text */
+    color: white; /* Text color */
+}
+
+
+/* Footer Mobile Responsiveness */
+@media (max-width: 768px) {
+    #imgFooter {
+        height: 150px;
+        width:170px /* Smaller logo size for mobile */
+    }
+    
+    #contactBtn {
+        font-size: 14px; /* Smaller button text */
+        padding: 8px 16px;
+    }
+    
+    .icon img {
+        width: 25px; /* Smaller icons on mobile */
+        height: 25px;
+    }
+}

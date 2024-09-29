@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWebsite</title>
+    <link rel="stylesheet" href="portfoliostyle.css">
+</head>
+<body>
+    <section id="navBar">
+        <header>
+            <div id="header">
+                <!-- Logo -->
+                <a href="#">
+                    <img id="img1" src="logo-transparent-png.png" alt="Chandan's Logo">
+                </a>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">PROJECT</a></li>
+                        <li><a href="#footer">CONTACT</a></li>
+                    </ul>
+                    <!-- <marquee onmouseover="this.stop()" onmouseout="this.start()">Chandan&nbsp;&nbsp;Chandan&nbsp;&nbsp;Chandan&nbsp;&nbsp;Chandan</marquee> -->
+                </nav>
+            </div>
+        </header>
+    </section>
+    
+
+    <section id="home">
+        <div id="homecontainer">
+            <div>
+                <!-- Profile Image -->
+                <img id="img2" src="IMG_3759-removebg-preview.png" alt="Chandan's Profile Image">
+    
+                <!-- Name and Introduction -->
+                <p id="content">Hi, I'm CHANDAN G</p>
+                <span>Pursuing MCA</span>
+    
+                <!-- Description Paragraph -->
+                <p id="para">
+                    Seeking an entry-level position that will allow me to apply my technical skills and knowledge to provide excellent organizational growth. 
+                    I am committed to continuous learning and professional development, and I am excited to embark on a journey of personal and career growth 
+                    while adding value to the company.
+                </p>
+    
+                <!-- Resume Download Button -->
+                <button id="btn">
+                    <a href="F:\chandu\RESUMEs\ChandanG's Resume.pdf" target="_blank" download="ChandanG's Resume.pdf" id="downloadLink">Download Resume</a>
+                </button>
+                
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" style="display: none;">
+        <div class="contact-form">
+            <h2>Get in Touch</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+                <button id="backtohome">Back to Home</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="footer">
+        <footer>
+            <!-- Logo Image -->
+            <img id="imgFooter" src="logo-transparent-png.png" alt="Chandan's logo">
+            
+            <!-- Footer Text with Contact Info -->
+            <div id="textFooter">
+                <p>Hello, I'm Chandan G, currently pursuing MCA at 
+                    <a href="https://www.suranacollege.edu.in/contact-us/" target="_blank">Surana College Kengeri</a>.
+                </p>
+            </div>
+            
+            <!-- Contact Button -->
+            <button id="contactBtn">GET IN TOUCH</button>
+            
+            <!-- Social Media Section -->
+            <div id="SocialMediaIcon">
+                <p id="titleSocial">Social Media</p>
+                
+            <!-- GitHub Icon -->
+            <div class="icon">
+                <a href="https://github.com/YourProfile" target="_blank">
+                    <img src="SocialMediaLogo/Github.png" alt="GitHub Logo"> 
+                    <p>GitHub</p>
+                </a>
+            </div>
+
+            <!-- Instagram Icon -->
+            <div class="icon">
+                <a href="https://www.instagram.com/YourProfile" target="_blank">
+                    <img src="SocialMediaLogo/Instagram.png" alt="Instagram Logo"> 
+                    <p>Instagram</p>
+                </a>
+            </div>
+
+            <!-- LinkedIn Icon -->
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/chandan-g-331275228/" target="_blank">
+                    <img src="SocialMediaLogo/Linkedin.png" alt="LinkedIn Logo"> 
+                    <p>LinkedIn</p>
+                </a>
+            </div>
+
+            <!-- WhatsApp Icon -->
+            <div class="icon">
+                <a href="https://wa.me/8073142723" target="_blank">
+                    <img src="SocialMediaLogo/Whatsapp.png" alt="WhatsApp Logo"> 
+                    <p>WhatsApp</p>
+                </a>
+            </div>
+            </div>
+        </footer>
+    </section>
+
+    <script>
+        document.getElementById('contactBtn').addEventListener('click', function() {
+        document.getElementById('home').style.display = 'none';
+        document.getElementById('contact').style.display = 'block';
+    });
+
+        document.getElementById('backtohome').addEventListener('click', function() {
+        document.getElementById('contact').style.display = 'none';
+        document.getElementById('home').style.display = 'block';
+    });
+
+    </script>
+</body>
+</html>

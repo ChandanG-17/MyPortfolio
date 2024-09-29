@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Navigation</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.form-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <section id="mainForm" class="form-section">
+        <h1>Main Form</h1>
+        <p>This is the main form content.</p>
+        <button id="goToAnotherForm">Go to Another Form</button>
+    </section>
+
+    <section id="anotherForm" class="form-section" style="display:none;">
+        <h1>Another Form</h1>
+        <p>This is another form content.</p>
+        <button id="homeLabel">Home</button>
+    </section>
+    
+
+    <script>
+        document.getElementById('goToAnotherForm').addEventListener('click', function() {
+    document.getElementById('mainForm').style.display = 'none';
+    document.getElementById('anotherForm').style.display = 'block';
+});
+
+document.getElementById('homeLabel').addEventListener('click', function() {
+    document.getElementById('anotherForm').style.display = 'none';
+    document.getElementById('mainForm').style.display = 'block';
+});
+
+    </script> <!-- Link to your JavaScript -->
+</body>
+</html>
