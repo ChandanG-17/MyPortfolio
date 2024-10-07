@@ -1,0 +1,279 @@
+/* Navbar customization */
+#navBar {
+    background-color: #343a40; /* Matches Bootstrap's dark navbar */
+    padding: 10px 0;
+}
+
+#navBar ul li a {
+    font-size: 18px;
+    color: white;
+}
+
+#navBar ul li a:hover {
+    color: #ffc107; /* Bootstrap's warning color for a gold-like effect */
+}
+
+/* Home Section */
+#homecontainer {
+    margin-top: 30px; /* Ensures space from fixed navbar */
+}
+
+#home {
+    background-color: #2d2f3f;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img2 {
+    position: relative;
+    /* max-width: 100%; */
+    border-radius: 100px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#img2:hover{
+    border-radius: 130px;
+    box-shadow: 0px 4px 15px #28a745;
+    transition:1s ease-in-out;
+}
+
+#content {
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+#para {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#btn {
+    margin-top: 30px;
+}
+
+#btn a {
+    color: white;
+    text-decoration: none;
+}
+
+#btn:hover {
+    background-color: #d39e00; /* Hover color for the button */
+}
+
+/* Contact Form Section */
+.contact-form {
+    max-width: 500px;
+    margin: 140px auto;
+    padding: 20px;
+    background-color: lightcyan;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: 20px;
+    margin: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #3e8e41;
+}
+
+/* About section */
+#about{
+    background-color: #2d2f3f;
+}
+
+.about-section {
+    background-color: #2d2f3f;
+    padding: 80px 0;
+    color: #fff;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #00f;
+}
+
+.about-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.about-details {
+    max-width: 45%;
+}
+
+.about-details h3 {
+    font-size: 24px;
+    color: #00f;
+    margin-bottom: 15px;
+}
+
+.about-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-details ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.about-details ul li::before {
+    content: "• ";
+    color: #00f;
+}
+
+
+/* Footer Section */
+#footer {
+    background-color: #343a40;
+}
+
+#footer p {
+    font-size: 1rem;
+    color: #adb5bd; /* Slightly lighter than white for a muted tone */
+}
+
+#imgFooter{
+    width: 300px;
+    height: 150px;
+}
+
+#textFooter a {
+    color: #ffc107; /* Bootstrap's warning color */
+}
+
+#textFooter a:hover {
+    color: #e0a800; /* Darker shade for hover */
+}
+
+#SocialMediaIcon {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#SocialMediaIcon .icon {
+    margin: 0 15px;
+    text-align: center;
+}
+
+#SocialMediaIcon .icon img {
+    width:40px;
+    transition: transform 0.3s ease;
+}
+
+#SocialMediaIcon .icon img:hover {
+    transform: scale(1.1);
+}
+
+#SocialMediaIcon .icon p {
+    color: #adb5bd;
+}
+
+/* Button hover effects */
+.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+#sendBtn{
+    width: auto;
+    height: auto;
+}
+
+.btn-secondary{
+    background-color: #28a745;
+    width: auto;
+    height: 40px;
+}
+
+#contact-form-heading{
+    font-size:30px;
+}
+.btn-secondary:hover {
+    background-color:  #218838;
+    border-color:  #218838;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    #home {
+        text-align: center;
+    }
+
+    #homecontainer {
+        margin-top: 20px;
+    }
+
+    #img2 {
+        max-width: 100%;
+    }
+
+    #footer {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    #SocialMediaIcon {
+        flex-direction: column;
+    }
+
+    #SocialMediaIcon .icon {
+        margin: 10px 0;
+    }
+}
