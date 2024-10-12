@@ -18,7 +18,7 @@
     <!-- Navigation Bar -->
     <section id="navBar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a href="#" class="navbar-brand">
+            <a href="#home  " class="navbar-brand">
                 <img id="img1" src="logo-transparent-png.png" alt="Chandan's Logo" height="50">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +29,7 @@
                     <li class="nav-item"><a href="#home" class="nav-link" id="homelink">HOME</a></li>
                     <li class="nav-item"><a href="#" class="nav-link" id="aboutlink">ABOUT</a></li>
                     <li class="nav-item"><a href="#" class="nav-link" id="projectlink">PROJECT</a></li>
-                    <li class="nav-item"><a href="#footer" class="nav-link" id="contactlink">CONTACT</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" id="contactlink">CONTACT</a></li>
                 </ul>
             </div>
         </div>
@@ -87,7 +87,7 @@
                     <textarea id="message" name="message" required></textarea>
                 </div>
                 <button id="sendmessage" type="submit">Send Message</button>
-                <button id="backtohome">Back to Home</button>
+                <button type="reset">Reset</button>
             </form>
         </div>
     </section>
@@ -122,7 +122,91 @@
                 </div>
             </div>
         </div>
+        <hr size="5" color="white"/>
+
+        <!-- Education section -->
+    <section class="resume-section">
+        <h2 class="text-center mb-4 text-primary">Education</h2>
+        <div class="education-section">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fa fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h5 class="degree-title">Master's Degree</h5>
+                        <span class="date-range">Feb 2024 – Present(2024)</span>
+                        <h6 class="institute-name">Surana College Autonomous Kengeri</h6>
+                        <p class="description">
+                            I currently Pursuing MCA(Masters of Computer Applications) Degree specialization in Computer Science at Surana College Autonomous Kengeri, Bengaluru-61.
+                        </p>
+                    </div>                  
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fa fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h5 class="degree-title">Bachelor's Degree</h5>
+                        <span class="date-range">July 2020 – Aug 2023</span>
+                        <h6 class="institute-name">The National College Basavanagudi</h6>
+                        <p class="description">
+                            I completed BCA(Bachelors of Computer Applications) Degree specialization in Computer Science at The National College Basavanagudi, Bengaluru-04.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fa fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h5 class="degree-title">Schooling</h5>
+                        <span class="date-range">June 2006 – April 2018</span>
+                        <h6 class="institute-name">Vishwa Bharathi High School</h6>
+                        <p class="description">
+                            Completed my schooling through Karnataka Secondary Education Examination Board at Vishwa Bharathi High School, Uttarahalli main road, Bengaluru - 61.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+</section>
+
+
+    <section class="resume-section" id="project_section" style="display: none;">
+        <!-- Projects Section -->
+        <div class="projects-section">
+            <h4 class="section-title">Projects</h4>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fa fa-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h5 class="degree-title">National High School web-Portial</h5>
+                        <span class="date-range">2022-23</span>
+                        <p class="description">
+                            Developed a full-stack web application for an National High school. The project included registration form, feedback form, admin form, and Result announcement of students. Developed by using ASP.net C# and HTML, CSS, javaScript, and for database-management MS-SQL. 
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fa fa-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h5 class="degree-title">Car-Management-System</h5>
+                        <span class="date-range">2023</span>
+                        <p class="description">
+                            Created an car management system using  technology powered by Python and OpenCV. The system detects and marks attendance of students automatically, reducing manual errors.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
     <!-- Footer Section -->
@@ -186,30 +270,41 @@
             document.getElementById('home').style.display = 'none';
             document.getElementById('contact').style.display = 'block';
             document.getElementById('about').style.display ='none';
+            document.getElementById('project_section').style.display = "none";
+
         });
 
-        document.getElementById('backtohome').addEventListener('click', function() {
-            document.getElementById('contact').style.display = 'none';
-            document.getElementById('home').style.display = 'block';
-            document.getElementById('about').style.display ='none';
-           
-        });
+        // document.getElementById('backtohome').addEventListener('click', function() {
+        //     document.getElementById('contact').style.display = 'none';
+        //     document.getElementById('home').style.display = 'block';
+        //     document.getElementById('about').style.display ='none';
+        //     document.getElementById('project_section').style.display = "none";
+        // });
         document.getElementById('homelink').addEventListener('click', function() {
             document.getElementById('contact').style.display = 'none';
             document.getElementById('home').style.display = 'block';
             document.getElementById('about').style.display ='none';
-           
+            document.getElementById('project_section').style.display = "none";
         });
         document.getElementById('contactlink').addEventListener('click', function() {
             document.getElementById('home').style.display = 'none';
             document.getElementById('contact').style.display = 'block';
             document.getElementById('about').style.display ='none';
-           
+            document.getElementById('project_section').style.display = "none";
+
         });
         document.getElementById('aboutlink').addEventListener('click', function() {
             document.getElementById('contact').style.display = 'none';
             document.getElementById('home').style.display = 'none';
             document.getElementById('about').style.display ='block';
+            document.getElementById('project_section').style.display = "none";
+        });
+
+        document.getElementById('projectlink').addEventListener('click', function() {
+            document.getElementById('contact').style.display = 'none';
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('about').style.display ='none';
+            document.getElementById('project_section').style.display = "block";
            
         });
 

@@ -171,6 +171,139 @@
     color: #00f;
 }
 
+/* Education */
+.resume-section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+}
+
+
+.timeline {
+    margin-top: 20px;
+    position: relative;
+    padding-left: 40px;
+    border-left: 2px solid #ddd;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.timeline-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    top: 10px;
+    margin-right: 20px;
+}
+
+.timeline-content {
+    text-align: left;
+}
+
+.degree-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.date-range {
+    color: #777;
+    font-size: 14px;
+}
+
+.institute-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.description {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.fa-briefcase {
+    font-size: 20px;
+}
+
+/* projects-section */
+.projects-section {
+    margin-top: 40px;
+}
+
+.section-title {
+    color: #ff007f;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.timeline {
+    margin-top: 20px;
+    position: relative;
+    padding-left: 40px;
+    border-left: 2px solid #ddd;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.timeline-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    top: 10px;
+    margin-right: 20px;
+}
+
+.timeline-content {
+    text-align: left;
+}
+
+.degree-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.date-range {
+    color: #777;
+    font-size: 14px;
+}
+
+.institute-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.description {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.fa-briefcase,
+.fa-code {
+    font-size: 20px;
+}
+
 
 /* Footer Section */
 #footer {
